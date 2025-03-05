@@ -1,0 +1,38 @@
+staff
+-----
+staff_id 
+first_name 
+last_name 
+position 
+start_date 
+location_id
+
+sales_outlet
+-----
+sales_outlet_id integer not null primary key
+sales_outles_type varchar (20)
+address varchar (50)
+city varchar (20)
+telephone varchar (20)
+
+sales_transaction
+-----
+transaction_id integer not null primary key
+transaction_date date
+transaction_time time
+sales_outlet_id integer
+staff_id integer
+costumer_id integer
+product_id integer
+quantity integer
+price numeric
+
+customer
+-----
+customer_id integer not null primary key
+customer_name varchar (20)
+customer_email varchar (20)
+customer_since date
+card_number varchar (15)
+birthdate date
+gender char(1)
